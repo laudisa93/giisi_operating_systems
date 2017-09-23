@@ -1,0 +1,26 @@
+#! /bin/bash
+
+
+//Para cantidad caracteres  
+${#var}
+
+var=" * * * * *"
+
+echo "Stars"
+
+for (( i = 8 ; i >= 0; i=i-2 ))
+
+do
+	
+echo "${var:$i}"
+
+done
+
+
+for (( i = 0 ; i <= 8; i=i+2 ))
+
+do
+	
+echo "${var:$i}"
+
+done
